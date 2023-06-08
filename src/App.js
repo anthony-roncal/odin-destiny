@@ -1,8 +1,11 @@
 import './App.css';
+import WeaponDetails from './components/WeaponDetails'
 
 function App() {
   return (
-    <div className="App"></div>
+    <div className="App">
+      <WeaponDetails />
+    </div>
   );
 }
 
