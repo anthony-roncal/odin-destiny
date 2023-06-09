@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import '../styles/WeaponDetails.css';
 import WeaponTitleCard from './WeaponTitleCard';
+import WeaponExoticPerks from './WeaponExoticPerks';
 import WeaponStats from './WeaponStats';
 
 const WeaponDetails = () => {
@@ -694,7 +695,13 @@ const WeaponDetails = () => {
             </div>
             <div className='weapon-info-container'>
                 <div className='weapon-info-content'>
-                    <WeaponStats weapon={weapon} />
+                    <WeaponExoticPerks
+                        intrinsic={weapon.sockets.socketEntries[0].singleInitialItemData.displayProperties}
+                        intrinsicIcon={`${BUNGIE_URL}${weapon.sockets.socketEntries[0].singleInitialItemData.displayProperties.icon}`}
+                        perk={weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties}
+                        perkIcon={`${BUNGIE_URL}${weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties.icon}`}
+                    />
+                    <WeaponStats weapon={weapon} BUNGIE_URL={BUNGIE_URL}/>
                 </div>
                 <div className='weapon-info-sidebar'>
                     <img src={`${BUNGIE_URL}${weapon.screenshot}`} alt='screenshot' />

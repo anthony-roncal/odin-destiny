@@ -1,10 +1,10 @@
 import { React } from 'react';
 import WeaponStat from './WeaponStat';
 
-const WeaponStats = ({ weapon }) => {
+const WeaponStats = ({ weapon, BUNGIE_URL }) => {
     return (
         <>
-            <h3 className='stats-header'>Stats</h3>
+            <h3 className='section-header'>Stats</h3>
             <div className='stats-container'>
                 <ul className='stats-basic'>
                     <li>
@@ -49,7 +49,33 @@ const WeaponStats = ({ weapon }) => {
                 </ul>
                 <div>
                     <h4>Perks</h4>
-                    
+                    <ul className='stat-perks'>
+                        <li>
+                            <img className='stat-perk' 
+                                src={`${BUNGIE_URL}${weapon.sockets.socketEntries[1].singleInitialItemData.displayProperties.icon}`}
+                                alt={`${weapon.sockets.socketEntries[1].singleInitialItemData.displayProperties.name}`} />
+                        </li>
+                        <li>
+                            <img className='stat-perk' 
+                                src={`${BUNGIE_URL}${weapon.sockets.socketEntries[2].singleInitialItemData.displayProperties.icon}`}
+                                alt={`${weapon.sockets.socketEntries[2].singleInitialItemData.displayProperties.name}`} />
+                        </li>
+                        <li>
+                            <img className='stat-perk' 
+                                src={`${BUNGIE_URL}${weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties.icon}`}
+                                alt={`${weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties.name}`} />
+                        </li>
+                        <li>
+                            <img className='stat-perk' 
+                                src={`${BUNGIE_URL}${weapon.sockets.socketEntries[4].singleInitialItemData.displayProperties.icon}`}
+                                alt={`${weapon.sockets.socketEntries[4].singleInitialItemData.displayProperties.name}`} />
+                        </li>
+                        <li>
+                            <img className='stat-perk' 
+                                src={`${BUNGIE_URL}${weapon.sockets.socketEntries[10].reusablePlugItems[0].plugItemData.displayProperties.icon}`}
+                                alt={`${weapon.sockets.socketEntries[10].reusablePlugItems[0].plugItemData.displayProperties.name}`} />
+                        </li>
+                    </ul>
                 </div>
             </div>
         </>

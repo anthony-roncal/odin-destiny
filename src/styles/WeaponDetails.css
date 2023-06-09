@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.weapon-title-container > img {
+.weapon-title-container>img {
     width: 3rem;
     height: 3rem;
 }
@@ -36,7 +36,7 @@
     width: 100%;
 }
 
-.weapon-info-sidebar{
+.weapon-info-sidebar {
     margin: 0 auto;
 }
 
@@ -44,7 +44,21 @@
     max-width: 280px;
 }
 
-.stats-header {
+.exotic-perk {
+    display: flex;
+}
+
+.exotic-perk img {
+    width: 50px;
+    height: 50px;
+}
+
+.exotic-perk-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
     background-color: #3344;
     padding: 5px 30px;
     border-radius: 5px;
@@ -87,8 +101,11 @@
     height: 100%;
 }
 
-.recoil-svg {
-    position: absolute;
-    left: 70%;
-    bottom: 20px;
+.stat-perks {
+    display: flex;
+}
+
+.stat-perk {
+    width: 32px;
+    height: 32px;
 }
