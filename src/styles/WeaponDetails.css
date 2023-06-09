@@ -109,3 +109,12 @@
     width: 32px;
     height: 32px;
 }
+
+.curated-roll-perks {
+    display: flex;
+}
+
+.curated-roll-perk {
+    width: 75px;
+    height: 75px;
+}

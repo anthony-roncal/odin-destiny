@@ -3,6 +3,7 @@ import '../styles/WeaponDetails.css';
 import WeaponTitleCard from './WeaponTitleCard';
 import WeaponExoticPerks from './WeaponExoticPerks';
 import WeaponStats from './WeaponStats';
+import WeaponCuratedRoll from './WeaponCuratedRoll';
 
 const WeaponDetails = () => {
     const BUNGIE_URL = 'https://www.bungie.net';
@@ -702,6 +703,7 @@ const WeaponDetails = () => {
                         perkIcon={`${BUNGIE_URL}${weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties.icon}`}
                     />
                     <WeaponStats weapon={weapon} BUNGIE_URL={BUNGIE_URL}/>
+                    <WeaponCuratedRoll weapon={weapon} BUNGIE_URL={BUNGIE_URL}/>
                 </div>
                 <div className='weapon-info-sidebar'>
                     <img src={`${BUNGIE_URL}${weapon.screenshot}`} alt='screenshot' />
