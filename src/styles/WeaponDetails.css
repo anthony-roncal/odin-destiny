@@ -118,3 +118,23 @@
     width: 75px;
     height: 75px;
 }
+
+.weapon-related-collectible {
+    display: flex;
+}
+
+.weapon-related-collectible a {
+    text-decoration: none;
+    color: #0099ff
+}
+
+.weapon-related-collectible a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-details ul {
+    padding-left: 20px;
+}
+.sidebar-details li {
+    list-style-type: circle;
+}

@@ -4,6 +4,9 @@ import WeaponTitleCard from './WeaponTitleCard';
 import WeaponExoticPerks from './WeaponExoticPerks';
 import WeaponStats from './WeaponStats';
 import WeaponCuratedRoll from './WeaponCuratedRoll';
+import WeaponRelatedCollectible from './WeaponRelatedCollectible';
+import WeaponLore from './WeaponLore';
+import WeaponSidebarDetails from './WeaponSidebarDetails';
 
 const WeaponDetails = () => {
     const BUNGIE_URL = 'https://www.bungie.net';
@@ -265,7 +268,14 @@ const WeaponDetails = () => {
             "currentVersion": 0,
             "versions": [
                 {
-                    "powerCapHash": 2759499571
+                    "powerCapHash": 2759499571,
+                    "powerCapData": {
+                        "powerCap": 999990,
+                        "hash": 2759499571,
+                        "index": 0,
+                        "redacted": false,
+                        "blacklisted": false
+                    }
                 }
             ],
             "displayVersionWatermarkIcons": [
@@ -621,7 +631,8 @@ const WeaponDetails = () => {
                 "description": "Randy finally reaches the Tower. It was a long road from the Cosmodrome, but Shaw Han had given him some good directions. His ship had only exploded twice on the trip from Old Russia, and while he defended his Ghost's second (and much better) repair job, he even found some loot!\n\nAs he materializes on the receiving pad of the Tower, a gathering horde of Humans and Guardians of all \"ages\" gather around a singular figure deep in the crowd. Randy can feel an almost mythic aura—exotic, even—radiating from the figure. He jabs his scuffed elbows through the crowd to get a clear look. When he finally breaks through, he understands the draw: the Guardian. They stand, one leg propped up on the Tower railing. Randy's Ghost talked about this person a few times before. Some kind of hero.\n\nBig deal. Randy was a hero too.\n\n\"Amazing,\" a Titan says about the weapon in the Guardian's hands. Randy looks at the Titan wearing a strange chainmail visor.\n\n\"It's just a rocket launcher. I got one of those in Old Russia the other day,\" Randy brags proudly, unholstering a launcher.\n\nHis Ghost, Dandy, nudges him. \"Now listen here, berry blue,\" Dandy says. \"What you are looking at in the Guardian's hands is a top-of-the-line wolfpack deployment device. Each firing of which unleashes hell in the form of a swarm of homing micro rockets. I've told you a flock of crows is called a murder? Well, they really should've reserved the name for this swarm instead.\"\n\nRandy holds up his Bad Omens. \"I can put a tracking module on this.\" Dandy chuckles. \"I guess.\"\n\nRandy looks at the Bad Omens. His pride turns into frustration at the mediocrity of his equipment. In a fit of anger, he heaves the launcher over the Guardian's head and over the Tower railing.\n\nThe Guardian pivots and drops to a solid stance. They shoulder and fire off the Gjallarhorn like a volcanic eruption, blowing the Bad Omens to smithereens. Micro tracking rockets hunt down and turn each piece of falling debris to fireworks before they hit the ground. The acrid-sweet smell of burning fuel hangs in the air.\n\nRandy's jaw drops.\n\nThe Guardian steps forward and places the Gjallarhorn into Randy's hands with a smile.\n\n\"Start your legend with this instead.\"",
                 "name": "Gjallarhorn",
                 "hasIcon": false
-            }
+            },
+            "subtitle": "“If there is beauty in destruction, why not also in its delivery?” — Feizel Crux"
         },
         "summaryItemHash": 2673424576,
         "allowActions": true,
@@ -631,6 +642,18 @@ const WeaponDetails = () => {
             4,
             1,
             13
+        ],
+        "itemCategoryData": [
+            {
+                "displayProperties": {
+                    "description": "Weapons that pack a hefty punch.",
+                    "name": "Power Weapon",
+                    "hasIcon": false
+                },
+                "visible": false,
+                "deprecated": false,
+                "shortTitle": "Power"
+            }
         ],
         "specialItemType": 0,
         "itemType": 3,
@@ -702,11 +725,31 @@ const WeaponDetails = () => {
                         perk={weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties}
                         perkIcon={`${BUNGIE_URL}${weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties.icon}`}
                     />
-                    <WeaponStats weapon={weapon} BUNGIE_URL={BUNGIE_URL}/>
-                    <WeaponCuratedRoll weapon={weapon} BUNGIE_URL={BUNGIE_URL}/>
+                    <WeaponStats weapon={weapon} BUNGIE_URL={BUNGIE_URL} />
+                    <WeaponCuratedRoll weapon={weapon} BUNGIE_URL={BUNGIE_URL} />
+                    <WeaponRelatedCollectible
+                        icon={`${BUNGIE_URL}${weapon.displayProperties.icon}`}
+                        name={weapon.displayProperties.name}
+                        source={weapon.collectibleData.sourceString}
+                    />
+                    <WeaponLore loreData={weapon.loreData} />
                 </div>
                 <div className='weapon-info-sidebar'>
+                    <h4 className='sidebar-header'>Screenshots</h4>
                     <img src={`${BUNGIE_URL}${weapon.screenshot}`} alt='screenshot' />
+                    <h4 className='sidebar-header'>Details</h4>
+                    <WeaponSidebarDetails
+                        damageIcon={`${BUNGIE_URL}${weapon.defaultDamageTypeData.displayProperties.icon}`}
+                        damageType
+                        isCraftable
+                        ammoType
+                        seasonNum
+                        powerCap={weapon.quality.versions[0].powerCapData.powerCap}
+                        category={weapon.itemCategoryData[0].displayProperties.name}
+                        isInstanceItem={weapon.inventory.isInstanceItem}
+                        isEquippable={weapon.equippable}
+                        apiId={weapon.hash}
+                    />
                 </div>
             </div>
         </div>
