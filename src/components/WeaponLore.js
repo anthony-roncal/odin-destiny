@@ -4,9 +4,11 @@ const WeaponLore = ({ loreData }) => {
     return (
         <>
             <h3 className='section-header'>Lore</h3>
-            <p>{loreData.displayProperties.name}</p>
-            <p>{loreData.subtitle}</p>
-            <p>{loreData.displayProperties.description}</p>
+            <div className='lore-container'>
+                <p className='lore-name'>{loreData.displayProperties.name}</p>
+                <p className='lore-quote'>{loreData.subtitle}</p>
+                <p className='lore-description'>{loreData.displayProperties.description}</p>
+            </div>
         </>
     );
 }

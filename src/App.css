@@ -9,3 +9,7 @@
 .App {
   background-color: #1a1a20;
 }
+
+.App > div {
+  position: relative;
+}

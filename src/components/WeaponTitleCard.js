@@ -9,7 +9,7 @@ const WeaponTitleCard = ({ icon, name, tier, damageTypeIcon, inventorySlot, weap
                 <div className='weapon-title-subtext'>
                     {tier} / <img className='damage-type-icon' alt='damage-type' src={damageTypeIcon} /> {inventorySlot} / {weaponType}
                 </div>
-                <p className='weapon-flavor-text'>{flavorText}</p>
+                <p className='weapon-flavor-text lore-quote'>{flavorText}</p>
                 <p className='weapon-source'>{source}</p>
             </div>
         </div>

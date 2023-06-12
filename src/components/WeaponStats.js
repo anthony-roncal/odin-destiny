@@ -1,7 +1,7 @@
 import { React } from 'react';
 import WeaponStat from './WeaponStat';
 
-const WeaponStats = ({ weapon, BUNGIE_URL }) => {
+const WeaponStats = ({ weapon, BUNGIE_URL, handlePerkHover, handlePerkBlur, handleMouseMove }) => {
     return (
         <>
             <h3 className='section-header'>Stats</h3>
@@ -50,28 +50,28 @@ const WeaponStats = ({ weapon, BUNGIE_URL }) => {
                 <div>
                     <h4>Perks</h4>
                     <ul className='stat-perks'>
-                        <li>
-                            <img className='stat-perk' 
+                        <li onMouseEnter={handlePerkHover} onMouseLeave={handlePerkBlur} onMouseMove={handleMouseMove} data-perkindex={1}>
+                            <img className='stat-perk perk'
                                 src={`${BUNGIE_URL}${weapon.sockets.socketEntries[1].singleInitialItemData.displayProperties.icon}`}
                                 alt={`${weapon.sockets.socketEntries[1].singleInitialItemData.displayProperties.name}`} />
                         </li>
-                        <li>
-                            <img className='stat-perk' 
+                        <li onMouseEnter={handlePerkHover} onMouseLeave={handlePerkBlur} onMouseMove={handleMouseMove} data-perkindex={2}>
+                            <img className='stat-perk perk'
                                 src={`${BUNGIE_URL}${weapon.sockets.socketEntries[2].singleInitialItemData.displayProperties.icon}`}
                                 alt={`${weapon.sockets.socketEntries[2].singleInitialItemData.displayProperties.name}`} />
                         </li>
-                        <li>
-                            <img className='stat-perk' 
+                        <li onMouseEnter={handlePerkHover} onMouseLeave={handlePerkBlur} onMouseMove={handleMouseMove} data-perkindex={3}>
+                            <img className='stat-perk perk'
                                 src={`${BUNGIE_URL}${weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties.icon}`}
                                 alt={`${weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties.name}`} />
                         </li>
-                        <li>
-                            <img className='stat-perk' 
+                        <li onMouseEnter={handlePerkHover} onMouseLeave={handlePerkBlur} onMouseMove={handleMouseMove} data-perkindex={4}>
+                            <img className='stat-perk perk'
                                 src={`${BUNGIE_URL}${weapon.sockets.socketEntries[4].singleInitialItemData.displayProperties.icon}`}
                                 alt={`${weapon.sockets.socketEntries[4].singleInitialItemData.displayProperties.name}`} />
                         </li>
-                        <li>
-                            <img className='stat-perk' 
+                        <li onMouseEnter={handlePerkHover} onMouseLeave={handlePerkBlur} onMouseMove={handleMouseMove} data-perkindex={10}>
+                            <img className='stat-perk perk'
                                 src={`${BUNGIE_URL}${weapon.sockets.socketEntries[10].reusablePlugItems[0].plugItemData.displayProperties.icon}`}
                                 alt={`${weapon.sockets.socketEntries[10].reusablePlugItems[0].plugItemData.displayProperties.name}`} />
                         </li>

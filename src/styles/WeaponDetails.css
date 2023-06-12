@@ -9,13 +9,25 @@
 }
 
 .weapon-title-container>img {
-    width: 3rem;
-    height: 3rem;
+    width: 96px;
+    height: 96px;
+    margin-right: 10px;
 }
 
 .weapon-title-subtext {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+.weapon-flavor-text {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.weapon-source {
+    font-size: 12px;
 }
 
 .damage-type-icon {
@@ -44,8 +56,14 @@
     max-width: 280px;
 }
 
+h3 {
+    font-size: 24px;
+}
+
 .exotic-perk {
     display: flex;
+    gap: 15px;
+    margin: 20px 0;
 }
 
 .exotic-perk img {
@@ -56,6 +74,12 @@
 .exotic-perk-text {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.exotic-perk-text > p:first-child {
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .section-header {
@@ -69,9 +93,14 @@
     grid-template-columns: 1fr 300px;
 }
 
+.stats-container h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .stats-basic {
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -103,6 +132,8 @@
 
 .stat-perks {
     display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .stat-perk {
@@ -112,6 +143,9 @@
 
 .curated-roll-perks {
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    gap: 10px;
 }
 
 .curated-roll-perk {
@@ -119,8 +153,18 @@
     height: 75px;
 }
 
+.curated-roll-info {
+    font-style: italic;
+}
+
 .weapon-related-collectible {
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.weapon-related-collectible img {
+    margin-right: 10px;
 }
 
 .weapon-related-collectible a {
@@ -132,9 +176,148 @@
     text-decoration: underline;
 }
 
+.lore-container{
+    margin-top: 20px;
+    padding: 30px 40px;
+    background-color: #111116;
+}
+
+.lore-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.lore-quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.lore-description {
+    white-space: pre-line;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar-details {
+    background-color: #111116;
+    padding: 10px;
+}
+
 .sidebar-details ul {
     padding-left: 20px;
 }
+
 .sidebar-details li {
     list-style-type: circle;
+}
+
+.damage-type-solar {
+    color: rgb(242, 114, 27);
+    font-weight: 700;
+}
+
+.ammo-type-heavy {
+    color: #ff66ff;
+    font-weight: 700;
+}
+
+.season {
+    color: #0099ff;
+    font-weight: 700;
+}
+
+.weapon-perk-tooltip {
+    position: absolute;
+    max-width: 400px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.weapon-perk-tooltip > * {
+    border: 1px solid black;
+    box-shadow: black 2px 2px 2px;
+    border-radius: 5px;
+}
+
+.weapon-perk-tooltip img {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(120, 120, 120);
+}
+
+.weapon-perk-tooltip > div {
+    background-color: rgb(61, 61, 61);
+}
+
+.tooltip-header {
+    background-color: rgb(40, 40, 40);
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-shadow: 2px 2px 1px black;
+}
+
+.tooltip-details {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.tooltip-details > p {
+    margin: 10px 0;
+    white-space: pre-line;
+}
+
+.tooltip-season {
+    border-radius: 13px;
+    background-color: rgb(25, 25, 25);
+    text-align: center;
+    font-weight: 700;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+.tooltip-perk {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tooltip-perk img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.tooltip-perk-name,
+.tooltip-stat-name,
+.tooltip-objective-label {
+    font-weight: 700;
+}
+
+.tooltip-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.tooltip-stat {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.tooltip-objective {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.exotic { 
+    background-color: rgb(206, 174, 51);
 }

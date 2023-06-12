@@ -7,6 +7,7 @@ import WeaponCuratedRoll from './WeaponCuratedRoll';
 import WeaponRelatedCollectible from './WeaponRelatedCollectible';
 import WeaponLore from './WeaponLore';
 import WeaponSidebarDetails from './WeaponSidebarDetails';
+import WeaponPerkTooltip from './WeaponPerkTooltip';
 
 const WeaponDetails = () => {
     const BUNGIE_URL = 'https://www.bungie.net';
@@ -221,6 +222,7 @@ const WeaponDetails = () => {
             "equippingSoundHash": 0,
             "hornSoundHash": 0,
             "ammoType": 3,
+            "ammoTypeName": "Heavy",
             "displayStrings": [
                 ""
             ]
@@ -296,6 +298,18 @@ const WeaponDetails = () => {
                             "name": "Wolfpack Rounds",
                             "icon": "/common/destiny2_content/icons/9581a5329d9eff75cb770180cc644ced.png",
                         },
+                        "inventory": {
+                            "tierTypeHash": 3340296461,
+                            "tierTypeData": {
+                                "displayProperties": {
+                                    "description": "",
+                                    "name": "Basic",
+                                    "hasIcon": false
+                                }
+                            }
+                        },
+                        "itemTypeDisplayName": "Intrinsic",
+                        "investmentStats": [],
                         "perks": [
                             {
                                 "requirementDisplayString": "",
@@ -340,7 +354,57 @@ const WeaponDetails = () => {
                             "description": "This weapon is optimized for an especially explosive payload.\n  •  Greatly increases blast radius\n  •  Slightly decreases handling speed\n  •  Slightly decreases projectile speed",
                             "name": "Volatile Launch",
                             "icon": "/common/destiny2_content/icons/d255c9140cf640cfc820f995d1c1e96a.png"
-                        }
+                        },
+                        "inventory": {
+                            "tierTypeHash": 3340296461,
+                            "tierTypeData": {
+                                "displayProperties": {
+                                    "description": "",
+                                    "name": "Basic",
+                                    "hasIcon": false
+                                }
+                            }
+                        },
+                        "itemTypeDisplayName": "Launcher Barrel",
+                        "investmentStats": [
+                            {
+                                "statTypeHash": 3614673599,
+                                "statTypeData": {
+                                    "displayProperties": {
+                                        "description": "Increases the explosion radius of this weapon.",
+                                        "name": "Blast Radius",
+                                        "hasIcon": false
+                                    }
+                                },
+                                "value": 15,
+                                "isConditionallyActive": false
+                            },
+                            {
+                                "statTypeHash": 2523465841,
+                                "statTypeData": {
+                                    "displayProperties": {
+                                        "description": "Increases the speed of projectiles fired by this weapon.",
+                                        "name": "Velocity",
+                                        "hasIcon": false
+                                    }
+                                },
+                                "value": -5,
+                                "isConditionallyActive": false
+                            },
+                            {
+                                "statTypeHash": 943549884,
+                                "statTypeData": {
+                                    "displayProperties": {
+                                        "description": "The speed with which the weapon can be readied and aimed.",
+                                        "name": "Handling",
+                                        "hasIcon": false
+                                    }
+                                },
+                                "value": -5,
+                                "isConditionallyActive": false
+                            }
+                        ],
+                        "perks": []
                     },
                     "reusablePlugItems": [],
                     "preventInitializationOnVendorPurchase": false,
@@ -359,7 +423,45 @@ const WeaponDetails = () => {
                             "description": "Reduces weight for faster reloads.\n  •  Greatly increases reload speed\n  •  Decreases stability",
                             "name": "Alloy Casing",
                             "icon": "/common/destiny2_content/icons/e02a542e5162c002112c21b6fdf2e86b.png"
-                        }
+                        },
+                        "inventory": {
+                            "tierTypeHash": 3340296461,
+                            "tierTypeData": {
+                                "displayProperties": {
+                                    "description": "",
+                                    "name": "Basic",
+                                    "hasIcon": false
+                                }
+                            }
+                        },
+                        "itemTypeDisplayName": "Magazine",
+                        "investmentStats": [
+                            {
+                                "statTypeHash": 155624089,
+                                "statTypeData": {
+                                    "displayProperties": {
+                                        "description": "How much or little recoil you will experience while firing the weapon.",
+                                        "name": "Stability",
+                                        "hasIcon": false
+                                    }
+                                },
+                                "value": -10,
+                                "isConditionallyActive": false
+                            },
+                            {
+                                "statTypeHash": 4188031367,
+                                "statTypeData": {
+                                    "displayProperties": {
+                                        "description": "The time it takes to reload this weapon.",
+                                        "name": "Reload Speed",
+                                        "hasIcon": false
+                                    }
+                                },
+                                "value": 30,
+                                "isConditionallyActive": false
+                            }
+                        ],
+                        "perks": []
                     },
                     "reusablePlugItems": [],
                     "preventInitializationOnVendorPurchase": false,
@@ -378,7 +480,20 @@ const WeaponDetails = () => {
                             "description": "Gain increased handling and reload speed when standing near allies. Firing this weapon also grants Wolfpack Rounds to nearby allies wielding non-Exotic Rocket Launchers.",
                             "name": "Pack Hunter",
                             "icon": "/common/destiny2_content/icons/5e8be152a38c4acd61b2a9e56671cc83.png"
-                        }
+                        },
+                        "inventory": {
+                            "tierTypeHash": 3340296461,
+                            "tierTypeData": {
+                                "displayProperties": {
+                                    "description": "",
+                                    "name": "Basic",
+                                    "hasIcon": false
+                                }
+                            }
+                        },
+                        "itemTypeDisplayName": "Trait",
+                        "investmentStats": [],
+                        "perks": []
                     },
                     "reusablePlugItems": [],
                     "preventInitializationOnVendorPurchase": false,
@@ -397,7 +512,33 @@ const WeaponDetails = () => {
                             "description": "This weapon is especially easy to grip.\n  •  Greatly increases handling speed",
                             "name": "Short-Action Stock",
                             "icon": "/common/destiny2_content/icons/47f90d3f25a517166933f2b4eb38e9aa.png"
-                        }
+                        },
+                        "inventory": {
+                            "tierTypeHash": 3340296461,
+                            "tierTypeData": {
+                                "displayProperties": {
+                                    "description": "",
+                                    "name": "Basic",
+                                    "hasIcon": false
+                                }
+                            }
+                        },
+                        "itemTypeDisplayName": "Stock",
+                        "investmentStats": [
+                            {
+                                "statTypeHash": 943549884,
+                                "statTypeData": {
+                                    "displayProperties": {
+                                        "description": "The speed with which the weapon can be readied and aimed.",
+                                        "name": "Handling",
+                                        "hasIcon": false
+                                    }
+                                },
+                                "value": 15,
+                                "isConditionallyActive": false
+                            }
+                        ],
+                        "perks": []
                     },
                     "reusablePlugItems": [],
                     "preventInitializationOnVendorPurchase": false,
@@ -477,6 +618,9 @@ const WeaponDetails = () => {
                                     "name": "Gjallarhorn Catalyst",
                                     "icon": "/common/destiny2_content/icons/cb7b28517f147274efe68112a637bc94.jpg"
                                 },
+                                "inventory": {
+                                    "tierTypeName": "Exotic"
+                                },
                                 "objectives": {
                                     "objectiveHashes": [
                                         56878078
@@ -485,7 +629,43 @@ const WeaponDetails = () => {
                                         "completionValue": 400,
                                         "progressDescription": "Targets defeated",
                                     }
-                                }
+                                },
+                                "investmentStats": [
+                                    {
+                                        "statTypeHash": 3871231066,
+                                        "statTypeData": {
+                                            "displayProperties": {
+                                                "description": "The number of shots which can be fired before reloading.",
+                                                "name": "Magazine",
+                                                "hasIcon": false
+                                            },
+                                            "aggregationType": 2,
+                                            "hasComputedBlock": false,
+                                            "statCategory": 1,
+                                            "interpolate": false,
+                                            "hash": 3871231066,
+                                            "index": 24,
+                                            "redacted": false,
+                                            "blacklisted": false
+                                        },
+                                        "value": 20
+                                    }
+                                ],
+                                "perks": [
+                                    {
+                                        "requirementDisplayString": "",
+                                        "perkHash": 4254727062,
+                                        "perkData": {
+                                            "displayProperties": {
+                                                "description": "Increases magazine size. Final blows with Wolfpack Rounds spawn a faster, more powerful missile at the target's location.",
+                                                "name": "More Wolves",
+                                                "icon": "/common/destiny2_content/icons/056d763213c2f2ceb68cfb697c8f7917.png",
+                                                "hasIcon": true
+                                            }
+                                        },
+                                        "perkVisibility": 0
+                                    }
+                                ],
                             }
                         }
                     ],
@@ -703,6 +883,31 @@ const WeaponDetails = () => {
         "blacklisted": false
     });
 
+    const [perk, setPerk] = useState({});
+    const [perkTooltipPosition, setPerkTooltipPosition] = useState({ left: 0, top: 0 });
+    const [showTooltip, setShowTooltip] = useState(false);
+
+    const handlePerkHover = (e) => {
+        setShowTooltip(true);
+        setPerkTooltipPosition({
+            left: e.pageX,
+            top: e.pageY
+        });
+        let perkIndex = e.currentTarget.dataset.perkindex;
+        setPerk(weapon.sockets.socketEntries[perkIndex]);
+    };
+
+    const handlePerkBlur = () => {
+        setShowTooltip(false);
+    };
+
+    const handleMouseMove = (e) => {
+        setPerkTooltipPosition({
+            left: e.pageX + 20,
+            top: e.pageY
+        });
+    };
+
     return (
         <div>
             <div className='weapon-header'>
@@ -725,8 +930,20 @@ const WeaponDetails = () => {
                         perk={weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties}
                         perkIcon={`${BUNGIE_URL}${weapon.sockets.socketEntries[3].singleInitialItemData.displayProperties.icon}`}
                     />
-                    <WeaponStats weapon={weapon} BUNGIE_URL={BUNGIE_URL} />
-                    <WeaponCuratedRoll weapon={weapon} BUNGIE_URL={BUNGIE_URL} />
+                    <WeaponStats
+                        weapon={weapon}
+                        BUNGIE_URL={BUNGIE_URL}
+                        handlePerkHover={handlePerkHover}
+                        handlePerkBlur={handlePerkBlur}
+                        handleMouseMove={handleMouseMove}
+                    />
+                    <WeaponCuratedRoll
+                        socketEntries={weapon.sockets.socketEntries}
+                        BUNGIE_URL={BUNGIE_URL}
+                        handlePerkHover={handlePerkHover}
+                        handlePerkBlur={handlePerkBlur}
+                        handleMouseMove={handleMouseMove}
+                    />
                     <WeaponRelatedCollectible
                         icon={`${BUNGIE_URL}${weapon.displayProperties.icon}`}
                         name={weapon.displayProperties.name}
@@ -740,10 +957,10 @@ const WeaponDetails = () => {
                     <h4 className='sidebar-header'>Details</h4>
                     <WeaponSidebarDetails
                         damageIcon={`${BUNGIE_URL}${weapon.defaultDamageTypeData.displayProperties.icon}`}
-                        damageType
+                        damageType={weapon.defaultDamageTypeData.displayProperties.name}
                         isCraftable
-                        ammoType
-                        seasonNum
+                        ammoType={weapon.equippingBlock.ammoTypeName}
+                        seasonNum={15}
                         powerCap={weapon.quality.versions[0].powerCapData.powerCap}
                         category={weapon.itemCategoryData[0].displayProperties.name}
                         isInstanceItem={weapon.inventory.isInstanceItem}
@@ -752,6 +969,30 @@ const WeaponDetails = () => {
                     />
                 </div>
             </div>
+            {showTooltip && perk.reusablePlugItems.length < 1 && <WeaponPerkTooltip
+                position={perkTooltipPosition}
+                BUNGIE_URL={BUNGIE_URL}
+                name={perk.singleInitialItemData.displayProperties.name}
+                icon={`${BUNGIE_URL}${perk.singleInitialItemData.displayProperties.icon}`}
+                slot={`${perk.singleInitialItemData.inventory.tierTypeData.displayProperties.name} ${perk.singleInitialItemData.itemTypeDisplayName}`}
+                season={15}
+                description={perk.singleInitialItemData.displayProperties.description}
+                stats={perk.singleInitialItemData.investmentStats}
+                perks={perk.singleInitialItemData.perks}
+            />}
+            {showTooltip && perk.reusablePlugItems.length >= 1 && <WeaponPerkTooltip
+                position={perkTooltipPosition}
+                BUNGIE_URL={BUNGIE_URL}
+                name={perk.reusablePlugItems[0].plugItemData.displayProperties.name}
+                icon={`${BUNGIE_URL}${perk.reusablePlugItems[0].plugItemData.displayProperties.icon}`}
+                slot={`${perk.reusablePlugItems[0].plugItemData.inventory.tierTypeName}`}
+                season={15}
+                description={perk.reusablePlugItems[0].plugItemData.displayProperties.description}
+                perks={perk.reusablePlugItems[0].plugItemData.perks}
+                stats={perk.reusablePlugItems[0].plugItemData.investmentStats}
+                weaponName={weapon.displayProperties.name}
+                objective={perk.reusablePlugItems[0].plugItemData.objectives.objectiveData}
+            />}
         </div>
     );
 }
