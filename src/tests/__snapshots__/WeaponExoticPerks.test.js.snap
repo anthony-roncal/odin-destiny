@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weapon Exotic Perks component renders correct elements and data 1`] = `
+Array [
+  <h3
+    className="section-header"
+  >
+    Exotic Perks
+  </h3>,
+  <ul
+    className="exotic-perks"
+  >
+    <li
+      className="exotic-perk"
+    >
+      <img
+        alt="intrinsic-icon"
+        src="https://www.bungie.net/common/destiny2_content/icons/9581a5329d9eff75cb770180cc644ced.png"
+      />
+      <div
+        className="exotic-perk-text"
+      >
+        <p>
+          Wolfpack Rounds
+        </p>
+        <p>
+          Rounds fired split into tracking cluster missiles upon detonation.
+        </p>
+      </div>
+    </li>
+    <li
+      className="exotic-perk"
+    >
+      <img
+        alt="perk-icon"
+        src="https://www.bungie.net/common/destiny2_content/icons/5e8be152a38c4acd61b2a9e56671cc83.png"
+      />
+      <div
+        className="exotic-perk-text"
+      >
+        <p>
+          Pack Hunter
+        </p>
+        <p>
+          Gain increased handling and reload speed when standing near allies. Firing this weapon also grants Wolfpack Rounds to nearby allies wielding non-Exotic Rocket Launchers.
+        </p>
+      </div>
+    </li>
+  </ul>,
+]
+`;

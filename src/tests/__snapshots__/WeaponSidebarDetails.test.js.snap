@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weapon Sidebar Details component renders correct elements and data 1`] = `
+<div
+  className="sidebar-details"
+>
+  <ul>
+    <li>
+      Deals 
+      <img
+        alt="Solar"
+        className="damage-type-icon"
+        src="https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png"
+      />
+       
+      <span
+        className="damage-type-solar"
+      >
+        SOLAR
+      </span>
+       damage
+    </li>
+    <li>
+       Craftable
+    </li>
+    <li>
+      Uses 
+      <span
+        className="ammo-type-heavy"
+      >
+        HEAVY
+      </span>
+       ammo
+    </li>
+    <li>
+      Introduced in 
+      <span
+        className="season"
+      >
+        Season 
+        15
+      </span>
+    </li>
+    <li>
+      Current Drops
+      <ul>
+        <li>
+          No Power Cap
+        </li>
+      </ul>
+    </li>
+    <li>
+      Power Weapon
+    </li>
+    <li>
+      Instance Item
+    </li>
+    <li>
+      Equippable
+    </li>
+    <li>
+      API ID: 
+      1363886209
+    </li>
+  </ul>
+</div>
+`;

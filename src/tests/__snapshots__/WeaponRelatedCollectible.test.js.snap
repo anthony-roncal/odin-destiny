@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weapon Related Collectible component renders correct elements and data 1`] = `
+Array [
+  <h3
+    className="section-header"
+  >
+    Related Collectible
+  </h3>,
+  <div
+    className="weapon-related-collectible"
+  >
+    <img
+      alt="icon"
+      src="https://www.bungie.net/common/destiny2_content/icons/b62083eed6a4708e581fc9a061bcc8e9.jpg"
+    />
+    <div
+      className="weapon-related-collectible-text"
+    >
+      <h1>
+        <a
+          href="#"
+        >
+          Gjallarhorn
+        </a>
+      </h1>
+      <p
+        className="weapon-source"
+      >
+        Source: "And Out Fly the Wolves" Quest
+      </p>
+    </div>
+  </div>,
+]
+`;

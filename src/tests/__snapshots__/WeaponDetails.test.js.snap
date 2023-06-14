@@ -1,0 +1,684 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weapon Details matches snapshot 1`] = `
+<div>
+  <div
+    className="weapon-header"
+  >
+    <div
+      className="weapon-title-container"
+    >
+      <img
+        alt="icon"
+        src="https://www.bungie.net/common/destiny2_content/icons/b62083eed6a4708e581fc9a061bcc8e9.jpg"
+      />
+      <div
+        className="weapon-title-text"
+      >
+        <h1>
+          Gjallarhorn
+        </h1>
+        <div
+          className="weapon-title-subtext"
+        >
+          Exotic
+           / 
+          <img
+            alt="damage-type"
+            className="damage-type-icon"
+            src="https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png"
+          />
+           
+          Power
+           / 
+          Rocket Launcher
+        </div>
+        <p
+          className="weapon-flavor-text lore-quote"
+        >
+          “If there is beauty in destruction, why not also in its delivery?” — Feizel Crux
+        </p>
+        <p
+          className="weapon-source"
+        >
+          Source: "And Out Fly the Wolves" Quest
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="weapon-info-container"
+  >
+    <div
+      className="weapon-info-content"
+    >
+      <h3
+        className="section-header"
+      >
+        Exotic Perks
+      </h3>
+      <ul
+        className="exotic-perks"
+      >
+        <li
+          className="exotic-perk"
+        >
+          <img
+            alt="intrinsic-icon"
+            src="https://www.bungie.net/common/destiny2_content/icons/9581a5329d9eff75cb770180cc644ced.png"
+          />
+          <div
+            className="exotic-perk-text"
+          >
+            <p>
+              Wolfpack Rounds
+            </p>
+            <p>
+              Rounds fired split into tracking cluster missiles upon detonation.
+            </p>
+          </div>
+        </li>
+        <li
+          className="exotic-perk"
+        >
+          <img
+            alt="perk-icon"
+            src="https://www.bungie.net/common/destiny2_content/icons/5e8be152a38c4acd61b2a9e56671cc83.png"
+          />
+          <div
+            className="exotic-perk-text"
+          >
+            <p>
+              Pack Hunter
+            </p>
+            <p>
+              Gain increased handling and reload speed when standing near allies. Firing this weapon also grants Wolfpack Rounds to nearby allies wielding non-Exotic Rocket Launchers.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <h3
+        className="section-header"
+      >
+        Stats
+      </h3>
+      <div
+        className="stats-container"
+      >
+        <ul
+          className="stats-basic"
+        >
+          <li>
+            <span
+              className="stat-name"
+            >
+              Blast Radius
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "90%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              90
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Velocity
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "45%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              45
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Stability
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "64%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              64
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Handling
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "66%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              66
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Reload Speed
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "37%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              37
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Reload Time
+            </span>
+            <p
+              className="stat-value"
+            >
+              3.5s
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Aim Assistance
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "76%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              76
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Inventory Size
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "50%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              50
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Zoom
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "20%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              20
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Airborne Effectiveness
+            </span>
+            <div
+              className="stat-bar"
+            >
+              <div
+                className="stat-bar-value"
+                style={
+                  Object {
+                    "width": "6%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="stat-value"
+            >
+              6
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Recoil Direction
+            </span>
+            <p
+              className="stat-value"
+            >
+              49
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Rounds Per Minute
+            </span>
+            <p
+              className="stat-value"
+            >
+              15
+            </p>
+          </li>
+          <li>
+            <span
+              className="stat-name"
+            >
+              Magazine
+            </span>
+            <p
+              className="stat-value"
+            >
+              1
+            </p>
+          </li>
+        </ul>
+        <div>
+          <h4>
+            Perks
+          </h4>
+          <ul
+            className="stat-perks"
+          >
+            <li
+              data-perkindex={1}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+            >
+              <img
+                alt="Volatile Launch"
+                className="stat-perk perk"
+                src="https://www.bungie.net/common/destiny2_content/icons/d255c9140cf640cfc820f995d1c1e96a.png"
+              />
+            </li>
+            <li
+              data-perkindex={2}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+            >
+              <img
+                alt="Alloy Casing"
+                className="stat-perk perk"
+                src="https://www.bungie.net/common/destiny2_content/icons/e02a542e5162c002112c21b6fdf2e86b.png"
+              />
+            </li>
+            <li
+              data-perkindex={3}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+            >
+              <img
+                alt="Pack Hunter"
+                className="stat-perk perk"
+                src="https://www.bungie.net/common/destiny2_content/icons/5e8be152a38c4acd61b2a9e56671cc83.png"
+              />
+            </li>
+            <li
+              data-perkindex={4}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+            >
+              <img
+                alt="Short-Action Stock"
+                className="stat-perk perk"
+                src="https://www.bungie.net/common/destiny2_content/icons/47f90d3f25a517166933f2b4eb38e9aa.png"
+              />
+            </li>
+            <li
+              data-perkindex={10}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+            >
+              <img
+                alt="Gjallarhorn Catalyst"
+                className="stat-perk perk"
+                src="https://www.bungie.net/common/destiny2_content/icons/cb7b28517f147274efe68112a637bc94.jpg"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3
+        className="section-header"
+      >
+        Curated Roll
+      </h3>
+      <p
+        className="curated-roll-info"
+      >
+         Not all curated rolls actually drop in-game.
+      </p>
+      <ul
+        className="curated-roll-perks"
+      >
+        <li
+          data-perkindex={0}
+          data-testid="perk0"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+        >
+          <img
+            alt="Wolfpack Rounds"
+            className="curated-roll-perk perk"
+            src="https://www.bungie.net/common/destiny2_content/icons/9581a5329d9eff75cb770180cc644ced.png"
+          />
+        </li>
+        <li
+          data-perkindex={1}
+          data-testid="perk1"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+        >
+          <img
+            alt="Volatile Launch"
+            className="curated-roll-perk perk"
+            src="https://www.bungie.net/common/destiny2_content/icons/d255c9140cf640cfc820f995d1c1e96a.png"
+          />
+        </li>
+        <li
+          data-perkindex={2}
+          data-testid="perk2"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+        >
+          <img
+            alt="Alloy Casing"
+            className="curated-roll-perk perk"
+            src="https://www.bungie.net/common/destiny2_content/icons/e02a542e5162c002112c21b6fdf2e86b.png"
+          />
+        </li>
+        <li
+          data-perkindex={3}
+          data-testid="perk3"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+        >
+          <img
+            alt="Pack Hunter"
+            className="curated-roll-perk perk"
+            src="https://www.bungie.net/common/destiny2_content/icons/5e8be152a38c4acd61b2a9e56671cc83.png"
+          />
+        </li>
+        <li
+          data-perkindex={4}
+          data-testid="perk4"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+        >
+          <img
+            alt="Short-Action Stock"
+            className="curated-roll-perk perk"
+            src="https://www.bungie.net/common/destiny2_content/icons/47f90d3f25a517166933f2b4eb38e9aa.png"
+          />
+        </li>
+      </ul>
+      <h3
+        className="section-header"
+      >
+        Related Collectible
+      </h3>
+      <div
+        className="weapon-related-collectible"
+      >
+        <img
+          alt="icon"
+          src="https://www.bungie.net/common/destiny2_content/icons/b62083eed6a4708e581fc9a061bcc8e9.jpg"
+        />
+        <div
+          className="weapon-related-collectible-text"
+        >
+          <h1>
+            <a
+              href="#"
+            >
+              Gjallarhorn
+            </a>
+          </h1>
+          <p
+            className="weapon-source"
+          >
+            Source: "And Out Fly the Wolves" Quest
+          </p>
+        </div>
+      </div>
+      <h3
+        className="section-header"
+      >
+        Lore
+      </h3>
+      <div
+        className="lore-container"
+      >
+        <p
+          className="lore-name"
+        >
+          Gjallarhorn
+        </p>
+        <p
+          className="lore-quote"
+        >
+          “If there is beauty in destruction, why not also in its delivery?” — Feizel Crux
+        </p>
+        <p
+          className="lore-description"
+        >
+          Randy finally reaches the Tower. It was a long road from the Cosmodrome, but Shaw Han had given him some good directions. His ship had only exploded twice on the trip from Old Russia, and while he defended his Ghost's second (and much better) repair job, he even found some loot!
+
+As he materializes on the receiving pad of the Tower, a gathering horde of Humans and Guardians of all "ages" gather around a singular figure deep in the crowd. Randy can feel an almost mythic aura—exotic, even—radiating from the figure. He jabs his scuffed elbows through the crowd to get a clear look. When he finally breaks through, he understands the draw: the Guardian. They stand, one leg propped up on the Tower railing. Randy's Ghost talked about this person a few times before. Some kind of hero.
+
+Big deal. Randy was a hero too.
+
+"Amazing," a Titan says about the weapon in the Guardian's hands. Randy looks at the Titan wearing a strange chainmail visor.
+
+"It's just a rocket launcher. I got one of those in Old Russia the other day," Randy brags proudly, unholstering a launcher.
+
+His Ghost, Dandy, nudges him. "Now listen here, berry blue," Dandy says. "What you are looking at in the Guardian's hands is a top-of-the-line wolfpack deployment device. Each firing of which unleashes hell in the form of a swarm of homing micro rockets. I've told you a flock of crows is called a murder? Well, they really should've reserved the name for this swarm instead."
+
+Randy holds up his Bad Omens. "I can put a tracking module on this." Dandy chuckles. "I guess."
+
+Randy looks at the Bad Omens. His pride turns into frustration at the mediocrity of his equipment. In a fit of anger, he heaves the launcher over the Guardian's head and over the Tower railing.
+
+The Guardian pivots and drops to a solid stance. They shoulder and fire off the Gjallarhorn like a volcanic eruption, blowing the Bad Omens to smithereens. Micro tracking rockets hunt down and turn each piece of falling debris to fireworks before they hit the ground. The acrid-sweet smell of burning fuel hangs in the air.
+
+Randy's jaw drops.
+
+The Guardian steps forward and places the Gjallarhorn into Randy's hands with a smile.
+
+"Start your legend with this instead."
+        </p>
+      </div>
+    </div>
+    <div
+      className="weapon-info-sidebar"
+    >
+      <h4
+        className="sidebar-header"
+      >
+        Screenshots
+      </h4>
+      <img
+        alt="screenshot"
+        src="https://www.bungie.net/common/destiny2_content/screenshots/1363886209.jpg"
+      />
+      <h4
+        className="sidebar-header"
+      >
+        Details
+      </h4>
+      <div
+        className="sidebar-details"
+      >
+        <ul>
+          <li>
+            Deals 
+            <img
+              alt="Solar"
+              className="damage-type-icon"
+              src="https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png"
+            />
+             
+            <span
+              className="damage-type-solar"
+            >
+              SOLAR
+            </span>
+             damage
+          </li>
+          <li>
+             Craftable
+          </li>
+          <li>
+            Uses 
+            <span
+              className="ammo-type-heavy"
+            >
+              HEAVY
+            </span>
+             ammo
+          </li>
+          <li>
+            Introduced in 
+            <span
+              className="season"
+            >
+              Season 
+              15
+            </span>
+          </li>
+          <li>
+            Current Drops
+            <ul>
+              <li>
+                No Power Cap
+              </li>
+            </ul>
+          </li>
+          <li>
+            Power Weapon
+          </li>
+          <li>
+            Instance Item
+          </li>
+          <li>
+            Equippable
+          </li>
+          <li>
+            API ID: 
+            1363886209
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
