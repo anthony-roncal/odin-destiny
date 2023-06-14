@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/odin-destiny/static/css/main.ef255e62.css",
+    "main.js": "/odin-destiny/static/js/main.59e1189d.js",
+    "index.html": "/odin-destiny/index.html",
+    "main.ef255e62.css.map": "/odin-destiny/static/css/main.ef255e62.css.map",
+    "main.59e1189d.js.map": "/odin-destiny/static/js/main.59e1189d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef255e62.css",
+    "static/js/main.59e1189d.js"
+  ]
+}
