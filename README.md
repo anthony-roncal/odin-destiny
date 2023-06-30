@@ -1,3 +1,5 @@
+View app at: https://anthony-roncal.github.io/odin-destiny/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
